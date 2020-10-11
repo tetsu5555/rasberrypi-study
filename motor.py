@@ -9,8 +9,6 @@ GPIO.setmode(GPIO.BCM)
 for setBcm in motorGpio:
     GPIO.setup(setBcm, GPIO.OUT)
 
-print('hogehoge')
-
 while True:
     for directRot in range(len(motorGpio)):
         GPIO.output(motorGpio[directRot], True)
