@@ -8,5 +8,6 @@ dht.stat = dht11.DHT11(pin = tempGpio) # DHT11の２番ピンにつながったG
 
 stat = dhtStat.read() # 変数statにDHT11で読み取ったセンサーの情報を入力する
 print(stat.temperature) # 変数statに格納されているtemperatureの情報を画面に表示する
+print(stat.humidity)
 
 GPIO.cleanup()
